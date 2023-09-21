@@ -38,13 +38,14 @@ export default async function indexPage() {
                 
            
                   
-                  <div className="w-full pb-8 pt-2 dark:prose-invert prose-lg">
-                    <img className="m-auto w-6/12 xl:w-10/12" src={urlFor(post.cover).url()}/>
-                  </div><Link href="mailto:info@americancargocare.com">
-                  <div className='w-full text-white text-center font-bold'>
-                    <PortableText value={post.content} components={{}}/>
+                  <div className="w-full pb-8 pt-2 dark:prose-invert prose-lg  xl:w-6/12">
+                    <img className="m-auto w-8/12 xl:w-10/12" src={urlFor(post.cover).url()}/>
                   </div>
-                  </Link>
+                  <div className='w-full text-white text-center font-bold xl:w-6/12'>
+                  <Link href="mailto:info@americancargocare.com">
+                    <PortableText value={post.content} components={{}}/> </Link>
+                  </div>
+                 
              
 
               </article>
