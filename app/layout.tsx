@@ -21,7 +21,7 @@ export default function RootLayout({
       <head>
           <title>American CargoCare</title>
         </head>
-      <body className={`${inter.className}  text-black bg-black`}>
+      <body className={`${inter.className}  text-white bg-blue-700`}>
      <Providers>
       <main className=" mx-auto px-4 sm:px-6 lg:px-8">{children}</main>
       </Providers></body>
