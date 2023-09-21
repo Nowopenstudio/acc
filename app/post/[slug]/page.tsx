@@ -15,7 +15,7 @@ export default async function SlugPage({params,}:{params:{slug:string}}){
     const data = await getData(params.slug) as Post;
     const PortableTextComponent = {
         types:{
-            images:({value:any}) =>(
+            images:({value}:{value:any}) =>(
                 <Image src={urlFor(value).url()} alt="image" className="rounded-lg" width={800} height={800}/>
             )
         }
