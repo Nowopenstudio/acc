@@ -18,10 +18,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} bg-white text-black dark:bg-gray-900 dark:selection:bg-gray-900 dark:text-white h-full selection:bg-gray-50`}>
+      <head>
+          <title>American CargoCare</title>
+        </head>
+      <body className={`${inter.className}  text-black bg-black`}>
      <Providers>
-     <Navbar/>
-      <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">{children}</main>
+      <main className=" mx-auto px-4 sm:px-6 lg:px-8">{children}</main>
       </Providers></body>
     </html>
   )

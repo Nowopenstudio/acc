@@ -29,6 +29,26 @@ export default {
                 fields:[{type:'text',name:'alt',title:'Alternative text'}]
             }
         ]
+      },
+      {
+        title: 'cover',
+        name: 'cover',
+        type: 'image',
+        options: {
+          hotspot: true // <-- Defaults to false
+        },
+        fields: [
+          {
+            name: 'caption',
+            type: 'string',
+            title: 'Caption',
+          },
+          {
+            name: 'attribution',
+            type: 'string',
+            title: 'Attribution',
+          }
+        ]
       }
     ]
   }
