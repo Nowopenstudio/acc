@@ -9,7 +9,6 @@ export default defineConfig({
 
   projectId: 's5xfrh13',
   dataset: 'production',
-
   plugins: [deskTool(), visionTool()],
 
   schema: {
