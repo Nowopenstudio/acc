@@ -39,7 +39,7 @@ export default async function indexPage() {
            
                   
                   <div className="w-full pb-8 pt-2 dark:prose-invert prose-lg">
-                    <img className="m-auto xl:w- w-6/12" src={urlFor(post.cover).url()}/>
+                    <img className="m-auto w-6/12 xl:w-full" src={urlFor(post.cover).url()}/>
                   </div>
                   <div className='w-full text-white text-center'>
                     <PortableText value={post.content} components={{}}/>
