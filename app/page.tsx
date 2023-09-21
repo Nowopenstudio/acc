@@ -34,12 +34,12 @@ export default async function indexPage() {
         {data.map((post)=>{
           return(
             <div key={post._id} className="py-4">
-              <article className="xl:flex justify-center items-center w-full ">
+              <article className="xl:flex justify-center items-center w-full">
                 
            
                   
-                  <div className="w-full pb-8 pt-10 dark:prose-invert prose-lg">
-                    <img className="m-auto" src={urlFor(post.cover).url()}/>
+                  <div className="w-full pb-8 pt-2 dark:prose-invert prose-lg">
+                    <img className="m-auto xl:w- w-6/12" src={urlFor(post.cover).url()}/>
                   </div>
                   <div className='w-full text-white text-center'>
                     <PortableText value={post.content} components={{}}/>
