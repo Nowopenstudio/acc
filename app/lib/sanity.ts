@@ -6,5 +6,5 @@ const dataset = 'production'
 export const client = createClient({
     projectId,
     dataset,
-    useCdn: false
+    useCdn: true
 })
